@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Projeto Android - nº1</string>
+    <string name="label_titulo">Calculadora de IMC</string>
+    <string name="label_peso">Seu Peso</string>
+    <string name="input_peso">Exemplo: 100.7</string>
+    <string name="label_altura">Sua altura</string>
+    <string name="hint_altura">Exemplo: 1.89</string>
+    <string name="botao_calcular">Calcular</string>
+    <string name="botao_limpar">Limpar</string>
+</resources>
