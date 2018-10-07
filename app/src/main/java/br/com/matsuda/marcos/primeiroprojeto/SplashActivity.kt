@@ -10,29 +10,20 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
         carregar()
     }
 
-    private fun carregar(){
-
+    private fun carregar() {
         Handler().postDelayed({
-            chamarProximatela()
+            chamarProximaTela()
         }, 2000L)
     }
 
-    private fun chamarProximatela() {
-        // var -> variavel
-        // val -> constante
-
-        val proximaTelaIntent = Intent( this, FormularioActivity::class.java )
-
+    private fun chamarProximaTela() {
+        val proximaTelaIntent = Intent(this,
+                FormularioActivity::class.java)
         startActivity(proximaTelaIntent)
-
-        //nao esquecer de incluir esse metodo na tela de splashScreen!!!
         finish()
-
     }
-
-
-
 }
