@@ -30,9 +30,9 @@ class ResultadoActivity : AppCompatActivity() {
     private fun calcularIMC(peso: Double, altura: Double) {
         var imc = peso / (altura * altura)
 
-        tvIMC.text = imc.format(0)
-        if(imc < 17) {
+        tvIMC.text = imc.format(1)
 
+        if(imc < 17) {
             setImagem(R.drawable.magreza)
             tvIMCDescricao.text = "magreza"
         } else if (imc < 18.5){
